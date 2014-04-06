@@ -2,18 +2,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  color: #f77dff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  font-size: 18px; 
+  
+  
+  
+  }
 
 body {
-  margin: 80px 0; }
+  margin: 0px 0; }
 
 .heading:after {
   content: "";
   display: block;
   clear: both; }
+	
+h1{
+style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);"	
+}
 
 h1.title {
   font-size: 80px;
@@ -53,7 +60,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #fbbeff;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -101,7 +108,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+  color: #f77dff;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -117,7 +124,9 @@ hr {
 
 .container {
   width: 500px;
-  margin: 0 auto; }
+  margin-top:80px;
+  margin-left: auto;
+  margin-right:auto;}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -149,7 +158,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #f77dff;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -163,7 +172,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(238, 228, 218, 0.85);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -183,7 +192,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #f77dff;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -194,8 +203,8 @@ hr {
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+      background: rgba(255, 255, 255, 0.5);
+      color: #f77dff; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -220,7 +229,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: rgba(255, 255, 255, 0.5); }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -313,58 +322,65 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: url('../2.jpg');
+	color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: url('../4.jpg');
+	color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    color: rgba(0, 0, 0, 0);
+    background: url('../8.jpg');
+  }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    color: rgba(0, 0, 0, 0);
+    background: url('../16.jpg');}
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    color: rgba(0, 0, 0, 0);
+    background: url('../32.jpg'); }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    color: rgba(0, 0, 0, 0);
+    background: url('../64.jpg'); }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
+    color: rgba(0, 0, 0, 0);
+    background: url('../128.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
+    color: rgba(0, 0, 0, 0);
+    background: url('../256.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
+    color: rgba(0, 0, 0, 0);
+    background: url('../512.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
+    color: rgba(0, 0, 0, 0);
+    background: url('../1024.jpg');
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
+    color: rgba(0, 0, 0, 0);
+    background: url('../2048.gif');
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -488,7 +504,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #f77dff;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -551,7 +567,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #bbada0;
+    background: #fbbeff;
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -565,7 +581,7 @@ hr {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(238, 228, 218, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       z-index: 100;
       text-align: center;
       -webkit-animation: fade-in 800ms ease 1200ms;
@@ -585,7 +601,7 @@ hr {
         margin-top: 59px; }
       .game-container .game-message a {
         display: inline-block;
-        background: #8f7a66;
+        background: rgba(255, 555, 255, 0.5);
         border-radius: 3px;
         padding: 0 20px;
         text-decoration: none;
@@ -596,7 +612,7 @@ hr {
         .game-container .game-message a.keep-playing-button {
           display: none; }
       .game-container .game-message.game-won {
-        background: rgba(237, 194, 46, 0.5);
+        background: rgba(255, 555, 255, 0.5);
         color: #f9f6f2; }
         .game-container .game-message.game-won a.keep-playing-button {
           display: inline-block; }
