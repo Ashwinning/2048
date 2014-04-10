@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -14,8 +14,9 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
   
   <script type="text/javascript" src="jquery-1.5.1.js"></script>
-	<script type="text/javascript" src="jquery.videoBG.js"></script>
-  
+  <script type="text/javascript" src="jquery.videoBG.js"></script>
+
+    
   <script type="text/javascript">
   
   $(document).ready(
@@ -24,7 +25,6 @@
 		$('body').videoBG({
 		mp4:'bg.mp4',
 		webm:'bg.webm',
-		poster:'christmas_snow.jpg',
 		scale:false,
 		zIndex:999,
 		fullscreen:true,
@@ -37,6 +37,16 @@
   
 </head>
 <body>
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
+	<div id=1 class="popup-div" style="position: fixed; bottom: 200; right: 200;"></div>
+	<div id=2 class="popup-div" style="position: fixed; bottom: 200; left: 200;"></div>
+    <div id=3 class="popup-div" style="position: fixed; top: 200; left: 200;"></div>
+    <div id=4 class="popup-div" style="position: fixed; top: 200; right: 200;"></div>
+    
   <div class="container"/>
     <div class="heading" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);">
       <h1 class="title">2048</h1>
@@ -124,5 +134,19 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  
+
+
+<!-- Preloader -->
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
+</script> 
+
 </body>
 </html>

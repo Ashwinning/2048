@@ -115,10 +115,58 @@ HTMLActuator.prototype.updateScore = function (score) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
-
     this.scoreContainer.appendChild(addition);
+	
+	PopUp();
   }
 };
+
+
+function PopUp(){
+
+var a = Math.floor(Math.random() * 4) + 1;
+var b = Math.floor(Math.random() * 4) + 1;
+
+var popup = document.createElement("img");
+    popup.classList.add("popup-animate");
+
+			if (a == 1)
+			{
+			popup.setAttribute("src", "broo.png");
+			var audio1 = new Audio('broo.mp3');
+			audio1.play();	
+
+			}
+			else if (a == 2)
+			{
+			popup.setAttribute("src", "scaredya.png");
+			var audio2 = new Audio('scaredya.mp3');
+			audio2.play();	
+
+			}
+			else if (a == 3)
+			{
+			popup.setAttribute("src", "gotchascaredya.png");
+			var audio3 = new Audio('gotchascaredya.mp3');
+			audio3.play();	
+
+			}
+			else if (a == 4)
+			{
+			popup.setAttribute("src", "wow.png");
+			var audio3 = new Audio('wow.mp3');
+			audio3.play();	
+			}
+			document.getElementById(b).appendChild(popup);
+	
+	
+	
+
+	
+	
+}
+
+
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
